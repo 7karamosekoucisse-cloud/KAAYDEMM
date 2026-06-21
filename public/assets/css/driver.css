@@ -1,0 +1,116 @@
+/* ════════════════════════════
+   THÈME CONDUCTEUR — Maître de route
+   Palette : Vert · Émeraude · Noir profond
+   Ambiance : Puissante, professionnelle, premium
+════════════════════════════ */
+
+.kd-actor-driver .kd-dash-header {
+  background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #047857 100%);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  position: relative; overflow: hidden;
+  box-shadow: 0 8px 32px rgba(6,95,70,.35);
+}
+.kd-actor-driver .kd-dash-header::before {
+  content: '🚗';
+  position: absolute; right: 2rem; top: 50%;
+  transform: translateY(-50%);
+  font-size: 6rem; opacity: .08;
+  pointer-events: none;
+}
+.kd-actor-driver .kd-dash-header::after {
+  content: '';
+  position: absolute; bottom: -40px; left: -40px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(52,211,153,.2), transparent 70%);
+}
+.kd-actor-driver .kd-dash-header h2 { color: #fff; font-size: 1.75rem; font-weight: 900; margin: 0 0 .25rem; }
+.kd-actor-driver .kd-dash-header .sub { color: rgba(255,255,255,.55); font-size: .85rem; }
+
+/* KPI Cards conducteur — style dashboard voiture */
+.kd-actor-driver .kd-kpi {
+  position: relative; overflow: hidden;
+  border-radius: 16px !important; border: none !important;
+  padding: 1.5rem;
+}
+.kd-actor-driver .kd-kpi::before { display: none; }
+.kd-actor-driver .kd-kpi.ocean {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  box-shadow: 0 4px 20px rgba(5,150,105,.12);
+}
+.kd-actor-driver .kd-kpi.ocean .kd-kpi-val { color: #064E3B; }
+.kd-actor-driver .kd-kpi.ocean .kd-kpi-icon { background: rgba(5,150,105,.12); color: #059669; }
+.kd-actor-driver .kd-kpi.savane {
+  background: linear-gradient(135deg, #F0FDF4 0%, #BBF7D0 100%);
+  box-shadow: 0 4px 20px rgba(22,163,74,.12);
+}
+.kd-actor-driver .kd-kpi.savane .kd-kpi-val { color: #14532D; }
+.kd-actor-driver .kd-kpi.gold {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+  box-shadow: 0 4px 20px rgba(217,119,6,.12);
+}
+.kd-actor-driver .kd-kpi.gold .kd-kpi-val { color: #78350F; }
+.kd-actor-driver .kd-kpi.coral {
+  background: linear-gradient(135deg, #FFF7ED 0%, #FED7AA 100%);
+  box-shadow: 0 4px 20px rgba(234,88,12,.12);
+}
+.kd-actor-driver .kd-kpi.coral .kd-kpi-val { color: #7C2D12; }
+
+/* Trip rows conducteur — style route GPS */
+.kd-actor-driver .kd-trip-row {
+  border-radius: 16px !important;
+  border: 1.5px solid #D1FAE5 !important;
+  background: linear-gradient(135deg, #fff 0%, #F0FDF9 100%) !important;
+  transition: all .25s cubic-bezier(.22,1,.36,1) !important;
+}
+.kd-actor-driver .kd-trip-row:hover {
+  border-color: #059669 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 28px rgba(5,150,105,.18) !important;
+}
+.kd-actor-driver .kd-trip-row::before {
+  background: linear-gradient(180deg, #059669, #34D399) !important;
+}
+
+/* Cards conducteur */
+.kd-actor-driver .card {
+  border: 1px solid #D1FAE5 !important;
+  border-radius: 18px !important;
+}
+.kd-actor-driver .card:hover { box-shadow: 0 8px 32px rgba(5,150,105,.10) !important; }
+
+/* Bouton retour conducteur */
+.kd-actor-driver .kd-back-btn { color: #065F46; }
+.kd-actor-driver .kd-back-btn:hover { color: #047857; }
+.kd-actor-driver .kd-back-arrow { border-color: #A7F3D0; background: #ECFDF5; color: #065F46; }
+.kd-actor-driver .kd-back-btn:hover .kd-back-arrow { background: #059669; border-color: #059669; color: #fff; }
+
+/* Boutons conducteur */
+.kd-actor-driver .btn-primary {
+  background: linear-gradient(135deg, #059669, #047857) !important;
+  box-shadow: 0 4px 16px rgba(5,150,105,.30) !important;
+}
+.kd-actor-driver .btn-primary:hover {
+  box-shadow: 0 8px 28px rgba(5,150,105,.40) !important;
+}
+
+/* Badge spécial conducteur dans le dashboard */
+.kd-driver-badge {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: linear-gradient(135deg, #059669, #34D399);
+  color: #fff; padding: .35rem 1rem; border-radius: 99px;
+  font-size: .78rem; font-weight: 800;
+  box-shadow: 0 4px 16px rgba(5,150,105,.3);
+  font-family: var(--font-d);
+}
+
+/* Check-in zone */
+.kd-checkin-zone {
+  background: linear-gradient(135deg, #064E3B, #065F46);
+  border-radius: 18px; padding: 1.5rem;
+  border: 1px solid #047857;
+  box-shadow: 0 4px 20px rgba(6,78,59,.25);
+}
+.kd-checkin-zone input { background: rgba(255,255,255,.1) !important; border-color: rgba(255,255,255,.2) !important; color: #fff !important; }
+.kd-checkin-zone input::placeholder { color: rgba(255,255,255,.4) !important; }
+.kd-checkin-zone .form-label { color: rgba(255,255,255,.7) !important; }

@@ -1,0 +1,127 @@
+/* ════════════════════════════
+   THÈME ADMIN — Contrôle total
+   Palette : Violet · Indigo · Noir profond
+   Ambiance : Autorité, sophistiqué, data-driven
+════════════════════════════ */
+
+.kd-actor-admin .kd-dash-header {
+  background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  position: relative; overflow: hidden;
+  box-shadow: 0 8px 40px rgba(67,56,202,.35);
+}
+.kd-actor-admin .kd-dash-header::before {
+  content: '⚡';
+  position: absolute; right: 2rem; top: 50%;
+  transform: translateY(-50%);
+  font-size: 7rem; opacity: .07;
+  pointer-events: none;
+}
+.kd-actor-admin .kd-dash-header::after {
+  content: '';
+  position: absolute; top: -50px; right: -50px;
+  width: 250px; height: 250px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(129,140,248,.25), transparent 70%);
+}
+.kd-actor-admin .kd-dash-header h2 { color: #fff; font-size: 1.75rem; font-weight: 900; margin: 0 0 .25rem; }
+.kd-actor-admin .kd-dash-header .sub { color: rgba(255,255,255,.5); font-size: .85rem; }
+
+/* Badge admin haute autorité */
+.kd-admin-shield {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: linear-gradient(135deg, #4338CA, #7C3AED);
+  color: #fff; padding: .35rem 1rem; border-radius: 99px;
+  font-size: .78rem; font-weight: 800;
+  box-shadow: 0 4px 16px rgba(67,56,202,.35);
+  font-family: var(--font-d);
+}
+
+/* KPI Admin — data dashboard style */
+.kd-actor-admin .kd-kpi { border-radius: 16px !important; border: none !important; padding: 1.5rem; }
+.kd-actor-admin .kd-kpi::before { display: none; }
+.kd-actor-admin .kd-kpi.ocean {
+  background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+  box-shadow: 0 4px 20px rgba(109,40,217,.12);
+}
+.kd-actor-admin .kd-kpi.ocean .kd-kpi-val { color: #3730A3; }
+.kd-actor-admin .kd-kpi.ocean .kd-kpi-icon { background: rgba(109,40,217,.12); color: #6D28D9; }
+.kd-actor-admin .kd-kpi.savane {
+  background: linear-gradient(135deg, #EEF2FF, #E0E7FF);
+  box-shadow: 0 4px 20px rgba(79,70,229,.12);
+}
+.kd-actor-admin .kd-kpi.savane .kd-kpi-val { color: #1E1B4B; }
+.kd-actor-admin .kd-kpi.savane .kd-kpi-icon { background: rgba(79,70,229,.12); color: #4F46E5; }
+.kd-actor-admin .kd-kpi.gold {
+  background: linear-gradient(135deg, #FDF4FF, #FAE8FF);
+  box-shadow: 0 4px 20px rgba(168,85,247,.12);
+}
+.kd-actor-admin .kd-kpi.gold .kd-kpi-val { color: #581C87; }
+.kd-actor-admin .kd-kpi.gold .kd-kpi-icon { background: rgba(168,85,247,.12); color: #A855F7; }
+.kd-actor-admin .kd-kpi.coral {
+  background: linear-gradient(135deg, #FEF2F2, #FCE7F3);
+  box-shadow: 0 4px 20px rgba(236,72,153,.12);
+}
+.kd-actor-admin .kd-kpi.coral .kd-kpi-val { color: #831843; }
+.kd-actor-admin .kd-kpi.coral .kd-kpi-icon { background: rgba(236,72,153,.12); color: #EC4899; }
+
+/* Cards admin */
+.kd-actor-admin .card {
+  border: 1px solid #EDE9FE !important;
+  border-radius: 18px !important;
+}
+.kd-actor-admin .card:hover { box-shadow: 0 8px 32px rgba(67,56,202,.10) !important; }
+
+/* Table admin style */
+.kd-actor-admin .kd-tbl thead th {
+  background: linear-gradient(135deg, #1E1B4B, #312E81) !important;
+}
+
+/* Bouton retour admin */
+.kd-actor-admin .kd-back-btn { color: #4338CA; }
+.kd-actor-admin .kd-back-btn:hover { color: #3730A3; }
+.kd-actor-admin .kd-back-arrow { border-color: #C4B5FD; background: #EDE9FE; color: #4338CA; }
+.kd-actor-admin .kd-back-btn:hover .kd-back-arrow { background: #4338CA; border-color: #4338CA; color: #fff; }
+
+/* Boutons admin */
+.kd-actor-admin .btn-primary {
+  background: linear-gradient(135deg, #4F46E5, #4338CA) !important;
+  box-shadow: 0 4px 16px rgba(67,56,202,.30) !important;
+}
+.kd-actor-admin .btn-primary:hover { box-shadow: 0 8px 28px rgba(67,56,202,.40) !important; }
+
+/* Lien rapide admin */
+.kd-admin-link {
+  background: var(--white);
+  border: 1.5px solid #EDE9FE;
+  border-radius: 16px;
+  padding: 1.25rem;
+  text-decoration: none; display: block;
+  transition: all .25s cubic-bezier(.22,1,.36,1);
+  text-align: center;
+}
+.kd-admin-link:hover {
+  border-color: #4F46E5;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(67,56,202,.15);
+}
+.kd-admin-link-icon {
+  width: 48px; height: 48px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; margin: 0 auto .75rem;
+  background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+  color: #4F46E5;
+  transition: all .25s;
+}
+.kd-admin-link:hover .kd-admin-link-icon {
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  color: #fff;
+}
+.kd-admin-link-title { font-family: var(--font-d); font-weight: 800; font-size: .9rem; color: var(--ink); }
+.kd-admin-link-sub   { font-size: .74rem; color: var(--muted); margin-top: .2rem; }
+
+/* Navbar admin accent violet */
+.kd-actor-admin .kd-navbar {
+  background: linear-gradient(135deg, rgba(30,27,75,.95), rgba(49,46,129,.9)) !important;
+  border-bottom: 1px solid rgba(129,140,248,.15) !important;
+}
