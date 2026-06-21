@@ -1,0 +1,6 @@
+À supprimer du footer:
+- PHP 8.2
+- Made in Senegal  
+- API REST / GET /api/trips
+- Fait avec coeur au Senegal
+- © 2026 Kaay Dem — Projet universitaire PHP POO
