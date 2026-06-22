@@ -207,6 +207,11 @@ curl "http://localhost/kaaydem/public/api/trips?from=Dakar&to=Thiès"
 - API REST JSON
 - Carte interactive Leaflet.js
 - Classement des conducteurs
+- Version mobile en scannat le qr code
+- Suivi en temps reel du trajet
+- Calcul automatique du prix selon les trajets
+- Mode sombre
+- Export CSV etc...
 
 ---
 
@@ -236,7 +241,7 @@ Tests couverts : BookingService, Validator, User, BookingStatus.
 
 ---
 
-## 🎓 Guide soutenance
+
 
 ### Points forts à démontrer
 
@@ -247,7 +252,7 @@ Tests couverts : BookingService, Validator, User, BookingStatus.
 5. **Sécurité** — inspecter le token CSRF dans le HTML source, montrer les requêtes préparées
 6. **API REST** — ouvrir `/api/trips` dans le navigateur
 
-### Scénario de démonstration (10 min)
+### Scénario de démonstration 
 
 ```
 1. Accueil          → recherche Dakar → Thiès
@@ -262,4 +267,4 @@ Tests couverts : BookingService, Validator, User, BookingStatus.
 
 ---
 
-*Projet réalisé dans le cadre du cours PHP Orienté Objet — Promotion 2025/2026*
+
