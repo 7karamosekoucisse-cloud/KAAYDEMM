@@ -207,11 +207,15 @@ curl "http://localhost/kaaydem/public/api/trips?from=Dakar&to=Thiès"
 - API REST JSON
 - Carte interactive Leaflet.js
 - Classement des conducteurs
-- Version mobile en scannat le qr code
+- Version mobile en scannant le qr code
 - Suivi en temps reel du trajet
 - Calcul automatique du prix selon les trajets
 - Mode sombre
-- Export CSV etc...
+- Export CSV
+- Paiement mobile Wave / Orange Money
+- Notifications (push PWA + idéalement SMS)
+- ETA + distance restante sur le suivi en direct
+- Trajets récurrents / abonnement campus
 
 ---
 
